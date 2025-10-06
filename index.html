@@ -2,46 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Simulated Phishing Test — [Course name]</title>
+  <title>Security Test Result — Simulation</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
-    body { font-family: Arial, sans-serif; padding:30px; max-width:900px; margin:auto; background:#f7f7f7; }
-    .card { background:white; border-radius:10px; padding:26px; box-shadow:0 8px 24px rgba(0,0,0,0.06); }
-    h1 { margin-top:0; }
-    .btn { display:inline-block; padding:10px 14px; margin-top:14px; border-radius:8px; text-decoration:none; border:1px solid #bbb; background:#fff; }
-    ul { margin-top:8px; }
-    .meta { font-size:0.9em; color:#444; margin-top:12px; }
-    footer { margin-top:16px; font-size:0.85em; color:#666; }
+    :root{
+      --bg:#f2f4f6;
+      --card:#ffffff;
+      --danger:#8b0000;
+      --muted:#4b5563;
+      --maxw:900px;
+    }
+    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);margin:0;padding:28px;display:flex;justify-content:center}
+    .wrap{max-width:var(--maxw);width:100%}
+    .banner{background:#fff0f0;border-left:6px solid var(--danger);padding:12px 16px;border-radius:8px;margin-bottom:18px}
+    .card{background:var(--card);border-radius:10px;padding:22px;box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+    h1{margin:0 0 6px;font-size:22px}
+    h2{color:var(--danger);margin:10px 0 14px;font-size:20px}
+    p{color:#111;line-height:1.5;margin:10px 0}
+    ul{margin:8px 0 16px 20px;color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;border:1px solid #222;background:#fff;margin-top:12px}
+    .notice{background:linear-gradient(90deg, rgba(139,0,0,0.06), rgba(255,255,255,0));padding:12px;border-radius:8px;margin:12px 0}
+    .muted{font-size:0.92em;color:var(--muted)}
+    footer{font-size:0.85em;color:var(--muted);margin-top:16px}
+    @media (max-width:560px){body{padding:16px}.card{padding:16px}}
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Simulated Phishing Test — Training Page</h1>
+  <div class="wrap">
+    <div class="banner">
+      <strong>AUTHORIZED EDUCATIONAL SIMULATION — NOT A REAL SECURITY INCIDENT</strong>
+      <div style="margin-top:6px;color:var(--muted)">This is a controlled training exercise. No credentials or sensitive data were collected by this page.</div>
+    </div>
 
-    <p><strong>This page is part of an authorized security exercise for [Course name].</strong></p>
-    <p><strong>Instructor:</strong> [Instructor name] • <strong>IT approver:</strong> [IT contact]</p>
+    <div class="card">
+      <h1>Security Test Result</h1>
+      <h2>YOU FAILED THIS SIMULATED PHISHING TEST</h2>
 
-    <h3>What happened</h3>
-    <p>You clicked a link used in a controlled class exercise. <strong>No passwords or personal data were collected.</strong></p>
+      <div class="notice">
+        <p><strong>Clear and direct:</strong> You clicked a link used in a sanctioned security exercise. This indicates you were susceptible to a phishing-style message. This was intentional for training purposes — you were NOT hacked. <strong>No passwords or credentials were captured by this page.</strong></p>
+      </div>
 
-    <h3>Quick tips to spot phishing</h3>
-    <ul>
-      <li>Check the sender’s full email address (not just the display name).</li>
-      <li>Hover links to preview the real URL before clicking.</li>
-      <li>Be suspicious of urgent requests for money or passwords.</li>
-      <li>When uncertain, contact the sender using a known phone/email (not reply-to an unexpected message).</li>
-    </ul>
+      <p><strong>Required action:</strong> Immediately click the button below and complete the mandatory report form. Submitting the form documents your participation and triggers the scheduled remediation steps.</p>
 
-    <p class="meta">Please report that you clicked using the <strong>Report</strong> button below so instructors can provide follow-up training.</p>
+      <a class="btn" id="reportBtn" href="https://forms.gle/sN3RA9baNFprSyoS9" target="_blank" rel="noopener">Report: I clicked this test (Open form)</a>
 
-    <!-- Google Form link inserted below -->
-    <a class="btn" id="reportBtn" href="https://forms.gle/sN3RA9baNFprSyoS9" target="_blank" rel="noopener">
-        Report: I clicked this test
-    </a>
+      <h3 style="margin-top:18px">What you must do now</h3>
+      <ul>
+        <li>Complete the report form linked above without delay.</li>
+        <li>Attend the required remedial briefing or training assigned after reporting.</li>
+        <li>Do not ignore this — failure to complete remediation may be recorded per the exercise rules.</li>
+      </ul>
 
-    <footer>
-      If you were not expecting this message, contact the instructor: <a href="mailto:your-instructor@example.edu">your-instructor@example.edu</a>
-    </footer>
+      <p class="muted"><strong>Facts:</strong> This is a training page used for an authorized exercise. It is not a real attack and did not collect passwords. If you believe this was not part of the exercise or you were targeted improperly, contact the course administrator or IT immediately.</p>
+
+      <footer>
+        <em>Authorized educational simulation. This page is not affiliated with any external company.</em>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
