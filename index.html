@@ -11,32 +11,37 @@
     .btn { display:inline-block; padding:10px 14px; margin-top:14px; border-radius:8px; text-decoration:none; border:1px solid #bbb; background:#fff; }
     ul { margin-top:8px; }
     .meta { font-size:0.9em; color:#444; margin-top:12px; }
+    footer { margin-top:16px; font-size:0.85em; color:#666; }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Simulated Phishing Test — Training Page</h1>
-    <p><strong>This page is part of an authorized security exercise for [Course name].</strong> Instructor: [Instructor name]. IT approval: [IT contact].</p>
+
+    <p><strong>This page is part of an authorized security exercise for [Course name].</strong></p>
+    <p><strong>Instructor:</strong> [Instructor name] • <strong>IT approver:</strong> [IT contact]</p>
 
     <h3>What happened</h3>
-    <p>You clicked a link used in a controlled phishing simulation. <strong>No passwords or personal data were collected.</strong></p>
+    <p>You clicked a link used in a controlled class exercise. <strong>No passwords or personal data were collected.</strong></p>
 
     <h3>Quick tips to spot phishing</h3>
     <ul>
-      <li>Check the sender’s full email address (not just name).</li>
-      <li>Hover links to see the real URL before clicking.</li>
-      <li>Be suspicious of urgent or threatening language asking for money or passwords.</li>
-      <li>When in doubt, contact the sender via a known phone number or email you already have.</li>
+      <li>Check the sender’s full email address (not just the display name).</li>
+      <li>Hover links to preview the real URL before clicking.</li>
+      <li>Be suspicious of urgent requests for money or passwords.</li>
+      <li>When uncertain, contact the sender using a known phone/email (not reply-to an unexpected message).</li>
     </ul>
 
-    <p class="meta">Please report that you clicked using the **Report button** below so we can track class metrics and provide training.</p>
+    <p class="meta">Please report that you clicked using the <strong>Report</strong> button below so instructors can provide follow-up training.</p>
 
-    <!-- Replace the URL below with your prefilled Google Form URL (see instructions) -->
-    <a class="btn" id="reportBtn" href="https://forms.gle/YOUR_PREFILLED_FORM" target="_blank" rel="noopener">Report: I clicked this test</a>
+    <!-- Google Form link inserted below -->
+    <a class="btn" id="reportBtn" href="https://forms.gle/sN3RA9baNFprSyoS9" target="_blank" rel="noopener">
+        Report: I clicked this test
+    </a>
 
-    <p style="margin-top:12px; font-size:0.9em; color:#666">
-      If this was not part of the class, contact your IT/security: <a href="mailto:your-instructor@example.edu">your-instructor@example.edu</a>.
-    </p>
+    <footer>
+      If you were not expecting this message, contact the instructor: <a href="mailto:your-instructor@example.edu">your-instructor@example.edu</a>
+    </footer>
   </div>
 </body>
 </html>
