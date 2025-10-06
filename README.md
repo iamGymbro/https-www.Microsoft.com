@@ -1,4 +1,4 @@
-# Phishing Simulation — School Security Lab
+# Phishing Simulation 
 
 Purpose: This repository hosts a safe, informational landing page used for an authorized phishing simulation exercise for testing.
 
