@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Security Test Result — Simulation</title>
+  <title>Security Alert — Simulation Result</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     :root{
@@ -12,51 +12,89 @@
       --muted:#4b5563;
       --maxw:900px;
     }
-    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);margin:0;padding:28px;display:flex;justify-content:center}
+    body{
+      font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      margin:0;
+      padding:28px;
+      display:flex;
+      justify-content:center;
+    }
     .wrap{max-width:var(--maxw);width:100%}
-    .banner{background:#fff0f0;border-left:6px solid var(--danger);padding:12px 16px;border-radius:8px;margin-bottom:18px}
-    .card{background:var(--card);border-radius:10px;padding:22px;box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+    .banner{
+      background:#fff0f0;
+      border-left:6px solid var(--danger);
+      padding:12px 16px;
+      border-radius:8px;
+      margin-bottom:18px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:10px;
+      padding:22px;
+      box-shadow:0 12px 30px rgba(2,6,23,0.06);
+    }
     h1{margin:0 0 6px;font-size:22px}
-    h2{color:var(--danger);margin:10px 0 14px;font-size:20px}
-    p{color:#111;line-height:1.5;margin:10px 0}
+    h2{color:var(--danger);margin:10px 0 14px;font-size:22px;text-transform:uppercase;}
+    p{color:#111;line-height:1.5;margin:10px 0;font-weight:500;}
     ul{margin:8px 0 16px 20px;color:var(--muted)}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;border:1px solid #222;background:#fff;margin-top:12px}
-    .notice{background:linear-gradient(90deg, rgba(139,0,0,0.06), rgba(255,255,255,0));padding:12px;border-radius:8px;margin:12px 0}
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      border:1px solid #222;
+      background:#fff;
+      margin-top:12px;
+      font-weight:bold;
+    }
+    .notice{
+      background:linear-gradient(90deg, rgba(139,0,0,0.08), rgba(255,255,255,0));
+      padding:16px;
+      border-radius:8px;
+      margin:12px 0;
+      font-weight:bold;
+    }
     .muted{font-size:0.92em;color:var(--muted)}
     footer{font-size:0.85em;color:var(--muted);margin-top:16px}
-    @media (max-width:560px){body{padding:16px}.card{padding:16px}}
+    @media (max-width:560px){
+      body{padding:16px}
+      .card{padding:16px}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="banner">
-      <strong>AUTHORIZED EDUCATIONAL SIMULATION — NOT A REAL SECURITY INCIDENT</strong>
-      <div style="margin-top:6px;color:var(--muted)">This is a controlled training exercise. No credentials or sensitive data were collected by this page.</div>
+      <strong>SECURITY SIMULATION — ORGANIZATION EXPOSED</strong>
+      <div style="margin-top:6px;color:var(--muted)">
+        You have failed this test in a way that exposed your organization. Immediate action is required.
+      </div>
     </div>
 
     <div class="card">
-      <h1>Security Test Result</h1>
-      <h2>YOU FAILED THIS SIMULATED PHISHING TEST</h2>
+      <h1>SECURITY TEST RESULT</h1>
+      <h2>YOU HAVE FAILED — SERIOUS EXPOSURE DETECTED</h2>
 
       <div class="notice">
-        <p><strong>Clear and direct:</strong> You clicked a link used in a sanctioned security exercise. This indicates you were susceptible to a phishing-style message. This was intentional for training purposes — you were NOT hacked. <strong>No passwords or credentials were captured by this page.</strong></p>
+        <p><strong>Direct and unequivocal:</strong> Clicking the test link has revealed vulnerabilities and exposed your organization. This is a critical failure. Your actions have risked organizational security. <strong>Immediate corrective measures are mandatory.</strong></p>
       </div>
 
-      <p><strong>Required action:</strong> Immediately click the button below and complete the mandatory report form. Submitting the form documents your participation and triggers the scheduled remediation steps.</p>
+      <p><strong>Required action:</strong> Click the button below and complete the report form without delay. Your report is required to initiate remediation steps.</p>
 
-      <a class="btn" id="reportBtn" href="https://forms.gle/sN3RA9baNFprSyoS9" target="_blank" rel="noopener">Report: I clicked this test (Open form)</a>
+      <a class="btn" id="reportBtn" href="https://forms.gle/sN3RA9baNFprSyoS9" target="_blank" rel="noopener">Report Now — Acknowledge Failure</a>
 
-      <h3 style="margin-top:18px">What you must do now</h3>
+      <h3 style="margin-top:18px">Next Steps</h3>
       <ul>
-        <li>Complete the report form linked above without delay.</li>
-        <li>Attend the required remedial briefing or training assigned after reporting.</li>
-        <li>Do not ignore this — failure to complete remediation may be recorded per the exercise rules.</li>
+        <li>Complete the report form linked above immediately.</li>
+        <li>Attend the mandatory remedial briefing or security training assigned.</li>
+        <li>Failure to act promptly may result in formal documentation of this security incident.</li>
       </ul>
 
-      <p class="muted"><strong>Facts:</strong> This is a training page used for an authorized exercise. It is not a real attack and did not collect passwords. If you believe this was not part of the exercise or you were targeted improperly, contact the course administrator or IT immediately.</p>
+      <p class="muted"><strong>Note:</strong> This page is part of a controlled training simulation. No passwords were captured. If this simulation was not authorized for you, contact IT immediately.</p>
 
       <footer>
-        <em>Authorized educational simulation. This page is not affiliated with any external company.</em>
+        <em>Authorized simulation — this page is part of an internal security exercise.</em>
       </footer>
     </div>
   </div>
